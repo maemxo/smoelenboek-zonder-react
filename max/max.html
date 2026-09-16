@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Max</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            body {
+                background: #eeeeee;
+                color: #222222;
+                font-family: Arial, sans-serif;
+            }
+
+            .profile-page {
+                position: relative;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+
+            .back-button {
+                position: absolute;
+                top: 0;
+                left: 20px;
+                padding: 8px 12px;
+                border: 1px solid #999999;
+                border-radius: 3px;
+                background: white;
+                color: #222222;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            .intro {
+                position: relative;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #language-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 8px 12px;
+                border: 1px solid #999999;
+                border-radius: 3px;
+                background: white;
+                color: #222222;
+                cursor: pointer;
+            }
+
+            .profile-card {
+                background: #f5f5f5;
+                border: 1px solid #d9d9d9;
+                padding: 30px;
+            }
+
+            .top {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                margin-bottom: 20px;
+            }
+
+            .profile-photo {
+                width: 170px;
+                height: 170px;
+                object-fit: cover;
+                border-radius: 50%;
+                display: block;
+            }
+
+            .info {
+                flex: 1;
+                text-align: left;
+            }
+
+            h1 {
+                margin: 0 0 10px;
+                font-size: 42px;
+            }
+
+            .details {
+                margin: 0;
+                line-height: 1.8;
+                font-size: 1rem;
+            }
+
+            h2 {
+                margin-top: 25px;
+                margin-bottom: 10px;
+                font-size: 1.3rem;
+            }
+
+            .bio {
+                margin: 0;
+                line-height: 1.7;
+                font-size: 1rem;
+            }
+
+            @media (max-width: 700px) {
+                .top {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .info {
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="profile-page">
+            <header class="intro">
+                <a class="back-button" href="../index.html" data-nl="Terug" data-en="Back">Terug</a>
+                <button id="language-button" onclick="changeLanguage()">English</button>
+                <p class="eyebrow" data-nl="P1 - Challenge 1" data-en="P1 - Challenge 1">P1 - Challenge 1</p>
+                <h1>Max Eekhof</h1>
+                <p class="intro-text" data-nl="Maak kennis met Max." data-en="Get to know Max.">Maak kennis met Max.</p>
+            </header>
+
+            <section class="profile-card">
+                <div class="top">
+                    <img class="profile-photo" src="profile.png" alt="Foto van Max" />
+
+                    <div class="info">
+                        <p class="details" data-nl="Leeftijd: 17 jaar<br>Geboortedatum: 28/05/2009<br>Kantoornummer: 6711<br>Email: max.eekhof@student.gildeopleidingen.nl<br>Telefoonnummer: +31 6 21928850<br>Hobby's: Gamen, muziek maken, nieuwe dingen leren<br>Huisdiere: Twee lieve katten" data-en="Age: 17 years<br>Date of birth: 28/05/2009<br>Office number: 6711<br>Email: max.eekhof@student.gildeopleidingen.nl<br>Phone number: +31 6 21928850<br>Hobbies: Gaming, making music, learning new things<br>Pets: Two lovely cats">Leeftijd: 17 jaar<br>Geboortedatum: 28/05/2009<br>Kantoornummer: 6711<br>Email: max.eekhof@student.gildeopleidingen.nl<br>Telefoonnummer: +31 6 21928850<br>Hobby's: Gamen, muziek maken, nieuwe dingen leren<br>Huisdiere: Twee lieve katten</p>
+                    </div>
+                </div>
+
+                <h2>Pitch</h2>
+                <p class="bio" data-nl="" data-en=""></p>
+            </section>
+        </main>
+
+        <script>
+            // Heb de language switcher gepakt van Stack Overflow, ik zou het zelf niet kunnen.
+            function changeLanguage() {
+                const page = document.documentElement;
+                const english = page.lang === "nl";
+                page.lang = english ? "en" : "nl";
+                document.querySelectorAll("[data-nl]").forEach(function (text) {
+                    text.innerHTML = english ? text.dataset.en : text.dataset.nl;
+                });
+                document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eeeeee;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#language-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background: white;
+    color: #222222;
+    cursor: pointer;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: #666666;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.intro-text {
+    margin: 15px 0 0;
+    color: #667383;
+}
+
+.student-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.student-card {
+    display: flex;
+    width: 240px;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: white;
+    color: #222222;
+    text-decoration: none;
+}
+
+.avatar {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 3px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.student-card h2 {
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+.student-card p {
+    margin: 0;
+    color: #667383;
+    font-size: 14px;
+}
+
+.card-blue .avatar { background: #3d7294; }
+.card-yellow .avatar { background: #d69a34; }
+.card-coral .avatar { background: #c96b59; }
+.card-green .avatar { background: #528475; }
+.card-purple .avatar { background: #76628c; }
+
+footer {
+    margin-top: 25px;
+    color: #666666;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .page-shell {
+        padding-top: 35px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .student-list {
+        display: block;
+    }
+
+    .student-card {
+        width: 100%;
+        margin-bottom: 16px;
+    }   
+}

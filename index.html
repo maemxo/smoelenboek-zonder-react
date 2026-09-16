@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smoelenboek Challenge 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="page">
+            <header class="intro">
+                <button id="language-button" onclick="changeLanguage()">English</button>
+                <p class="eyebrow">P1 - Challenge 1</p>
+                <h1>Smoelenboek</h1>
+                <p class="intro-text" data-nl="Maak kennis met onze groep studenten." data-en="Meet our group of students.">Maak kennis met onze groep studenten.</p>
+            </header>
+
+            <section class="student-list" aria-label="Onze studenten">
+                <a class="student-card card-blue" href="./max/max.html">
+                    <div class="avatar">M</div>
+                    <div>
+                        <h2>Max</h2>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a class="student-card card-yellow" href="alvin.html">
+                    <div class="avatar">A</div>
+                    <div>
+                        <h2>Alvin</h2>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a class="student-card card-coral" href="ryan.html">
+                    <div class="avatar">R</div>
+                    <div>
+                        <h2>Ryan</h2>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a class="student-card card-green" href="daan.html">
+                    <div class="avatar">D</div>
+                    <div>
+                        <h2>Daan</h2>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a class="student-card card-purple" href="klavs.html">
+                    <div class="avatar">K</div>
+                    <div>
+                        <h2>Klavs</h2>
+                        <p>Student</p>
+                    </div>
+                </a>
+            </section>
+
+            <footer data-nl="Een groep, vijf gezichten." data-en="One group, five faces.">Een groep, vijf gezichten.</footer>
+        </main>
+        <script>
+            function changeLanguage() {
+                const page = document.documentElement;
+                const english = page.lang === "nl";
+                page.lang = english ? "en" : "nl";
+                document.querySelectorAll("[data-nl]").forEach(function (text) {
+                    text.textContent = english ? text.dataset.en : text.dataset.nl;
+                });
+                document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
+            }
+        </script>
+    </body>
+</html>
