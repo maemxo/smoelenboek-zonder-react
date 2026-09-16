@@ -1,103 +1,101 @@
 body {
-                background: #eeeeee;
-                color: #222222;
-                font-family: Arial, sans-serif;
-            }
+    background: #eeeeee;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
 
-            .profile-page {
-                position: relative;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 40px 20px;
-            }
+.profile-page {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
-            .back-button {
-                position: absolute;
-                top: 0;
-                left: 20px;
-                padding: 8px 12px;
-                border: 1px solid #999999;
-                border-radius: 3px;
-                background: white;
-                color: #222222;
-                text-decoration: none;
-                font-size: 14px;
-            }
+.button-base {
+    padding: 8px 12px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background: white;
+    color: #222222;
+}
 
-            .intro {
-                position: relative;
-                margin-bottom: 25px;
-                text-align: center;
-            }
+.back-button {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-            #language-button {
-                position: absolute;
-                top: 0;
-                right: 0;
-                padding: 8px 12px;
-                border: 1px solid #999999;
-                border-radius: 3px;
-                background: white;
-                color: #222222;
-                cursor: pointer;
-            }
+.intro {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
-            .profile-card {
-                background: #f5f5f5;
-                border: 1px solid #d9d9d9;
-                padding: 30px;
-            }
+#language-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
 
-            .top {
-                display: flex;
-                align-items: center;
-                gap: 24px;
-                margin-bottom: 20px;
-            }
+.profile-card {
+    background: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    padding: 30px;
+}
 
-            .profile-photo {
-                width: 170px;
-                height: 170px;
-                object-fit: cover;
-                border-radius: 50%;
-                display: block;
-            }
+.top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
 
-            .info {
-                flex: 1;
-                text-align: left;
-            }
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
 
-            h1 {
-                margin: 0 0 10px;
-                font-size: 42px;
-            }
+.info {
+    flex: 1;
+    text-align: left;
+}
 
-            .details {
-                margin: 0;
-                line-height: 1.8;
-                font-size: 1rem;
-            }
+h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
+}
 
-            h2 {
-                margin-top: 25px;
-                margin-bottom: 10px;
-                font-size: 1.3rem;
-            }
+.details {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 1rem;
+}
 
-            .bio {
-                margin: 0;
-                line-height: 1.7;
-                font-size: 1rem;
-            }
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
 
-            @media (max-width: 700px) {
-                .top {
-                    flex-direction: column;
-                    text-align: center;
-                }
+.bio {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 1rem;
+}
 
-                .info {
-                    text-align: center;
-                }
-            }
+@media (max-width: 700px) {
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+}

@@ -21,15 +21,18 @@ body {
     text-align: center;
 }
 
-#language-button {
-    position: absolute;
-    top: 0;
-    right: 0;
+.button-base {
     padding: 8px 12px;
     border: 1px solid #999999;
     border-radius: 3px;
     background: white;
     color: #222222;
+}
+
+#language-button {
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: pointer;
 }
 
@@ -57,6 +60,7 @@ h1 {
 }
 
 .student-card {
+    --avatar-color: #3d7294;
     display: flex;
     width: 240px;
     align-items: center;
@@ -76,6 +80,7 @@ h1 {
     flex-shrink: 0;
     place-items: center;
     border-radius: 3px;
+    background: var(--avatar-color);
     color: white;
     font-size: 22px;
     font-weight: bold;
@@ -92,11 +97,11 @@ h1 {
     font-size: 14px;
 }
 
-.card-blue .avatar { background: #3d7294; }
-.card-yellow .avatar { background: #d69a34; }
-.card-coral .avatar { background: #c96b59; }
-.card-green .avatar { background: #528475; }
-.card-purple .avatar { background: #76628c; }
+.card-blue { --avatar-color: #3d7294; }
+.card-yellow { --avatar-color: #d69a34; }
+.card-coral { --avatar-color: #c96b59; }
+.card-green { --avatar-color: #528475; }
+.card-purple { --avatar-color: #76628c; }
 
 footer {
     margin-top: 25px;
@@ -106,7 +111,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .page-shell {
+    .page {
         padding-top: 35px;
     }
 
@@ -121,5 +126,5 @@ footer {
     .student-card {
         width: 100%;
         margin-bottom: 16px;
-    }   
+    }
 }
