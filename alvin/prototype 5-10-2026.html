@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>alvin</title>
+    <link rel="stylesheet" href="style.css">
+    <button id="language-button" class="button-base" onclick="changeLanguage()">English</button>
+</head> 
+
+<body>
+    <p style="font-family: monospace; font-size: x-large;" class="bio" data-nl="<b>User Story 1: Smoelenboek</b>" data-en="<b>User Story 1: Smoelenboek</b>">
+        <b>User Story 1: Smoelenboek</b>
+    </p>
+
+    <a href="../index.html"><button>Terug</button></a>
+
+    <h4 style="font-family: monospace; text-align: center;" class="bio" data-nl="Gilde / LJ2 / P1 / Alvin" data-en="Gilde / LJ2 / P1 / Alvin">
+        Gilde / LJ2 / P1 / Alvin
+    </h4>
+
+    <p style="font-family: 'Trebuchet MS', sans-serif; font-size: x-large; text-align: center;" class="bio" data-nl="<b>Ontmoet Alvin</b>" data-en="<b>Meet Alvin</b>">
+        <b>Ontmoet Alvin</b>
+    </p>
+
+    <p style="text-align: center; font-style: italic;" class="bio" data-nl="Doet al 2 jaar niveau 2 ICT in Gilde Opleidingen. Hij is een van de deelnemers die in dit project zit en doet SD (Software Development)." data-en="He has been studying ICT at Level 2 at Gilde Opleidingen for two years. He is one of the participants in this project and is specializing in SD (Software Development).">
+        Doet al 2 jaar niveau 2 ICT in Gilde Opleidingen. Hij is een van de deelnemers die in dit project zit en doet SD (Software Development).
+    </p>
+
+    <p class="text" class="bio" data-nl="<br><b>Biografie</b></br>" data-en="<br><b>Biography</b></br>">
+        <br><b>Biografie</b></br>
+    </p>
+
+    <p class="text" class="bio" data-nl="Naam: Alvin Mehinagic <br> Geboortedatum: 11 juli 2008 <br> Leeftijd: 18 <br> Intresses: Muziek luisteren, muziek maken, gamen, fitness <br><br> Kantoornummer: 6711 <br> Email: Alvin.Mehinagic@student.gildeopleidingen.nl <br> Telefoonnummer: +31 6 44650209" data-en="Name: Alvin Mehinagic <br> Date of birth: 11 July 2008 <br> Age: 18 <br> Interests: Listening to music, making music, gaming, fitness <br><br> Office number: 6711 <br> Email: Alvin.Mehinagic@student.gildeopleidingen.nl <br> Phone number: +31 6 44650209">
+        Naam: Alvin Mehinagic
+        <br>
+        Geboortedatum: 11 juli 2008
+        <br>
+        Leeftijd: 18
+        <br>
+        Intresses: Muziek luisteren, muziek maken, gamen, fitness
+        <br>
+        <br>
+        Kantoornummer: 6711
+        <br>
+        Email: Alvin.Mehinagic@student.gildeopleidingen.nl
+        <br>
+        Telefoonnummer: +31 6 44650209
+    </p>
+
+    <img class="pfp" src="IMG_3420.JPG" alt="alvin">
+
+    <p class="text" class="bio" data-nl="<br><b>Informatie over mijzelf</b></br>" data-en="<br><b>Information about me</b></br>">
+        <br><b>Informatie over mijzelf</b></br>
+    </p>
+
+    <p class="text" class="bio" data-nl="Ik ben geboren in Donderberg, Roermond. Ik woon samen met mijn ouders en mijn oudere broer. <br><br> Mijn interesse in ICT begon toen ik voor het eerst op de laptop van mijn broer terechtkwam. In het begin was ik vooral geïnteresseerd in computerspellen, maar toen ik ouder werd, raakte ik steeds nieuwsgieriger naar coderen en software. </br> </br> In mijn vrije tijd maak ik muziek, game ik af en toe en fitness ik ook. Ik luister ook naar muziek. Mijn favoriete artiest op dit moment is Twentythree." data-en="I was born in Donderberg, Roermond. I live with my parents and my older brother. <br><br> My interest in ICT began when I first started using my brother's laptop. At first, I was mainly interested in computer games, but as I got older, I became increasingly curious about coding and software. </br> </br> In my free time, I make music, play games occasionally, and work out. I also listen to music. My favorite artist at the moment is Twentythree.">
+        Ik ben geboren in Donderberg, Roermond. Ik woon samen met mijn ouders en mijn oudere broer.
+        <br><br>Mijn interesse in ICT begon toen ik voor het eerst op de laptop van mijn broer terechtkwam. In het begin was ik vooral geïnteresseerd in computerspellen, maar toen ik ouder werd, raakte ik steeds nieuwsgieriger naar coderen en software.</br></br>
+        In mijn vrije tijd maak ik muziek, game ik af en toe en fitness ik ook. Ik luister ook naar muziek. Mijn favoriete artiest op dit moment is Twentythree.
+    </p>
+
+            <script>
+            // Heb de language switcher gepakt van Stack Overflow, ik zou het zelf niet kunnen.
+            function changeLanguage() {
+                const page = document.documentElement;
+                const english = page.lang === "nl";
+                page.lang = english ? "en" : "nl";
+                document.querySelectorAll("[data-nl]").forEach(function (text) {
+                    text.innerHTML = english ? text.dataset.en : text.dataset.nl;
+                });
+                document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
+            }
+        </script>
+</body>
+              <script>
+              // Heb de language switcher gepakt van Stack Overflow, ik zou het zelf niet kunnen.
+              function changeLanguage() {
+                 const page = document.documentElement;
+                 const english = page.lang === "nl";
+                 page.lang = english ? "en" : "nl";
+                 document.querySelectorAll("[data-nl]").forEach(function (text) {
+                    text.innerHTML = english ? text.dataset.en : text.dataset.nl;
+                 });
+                 document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
+              }
+           </script>
+    </body>
