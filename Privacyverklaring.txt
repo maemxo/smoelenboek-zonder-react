@@ -1,0 +1,78 @@
+Privacyverklaring – Smoelenboek Project
+Laatst bijgewerkt: [05-10-2026]
+
+1. Wie zijn wij?
+Dit smoelenboek is een schoolproject van [team 4] aan [gildeopleidingen].
+Contact: [blabhlah@gmail.com]
+
+2. Welke persoonsgegevens verzamelen wij?
+Voor een smoelenboek verwerken wij:
+
+Naam van de leerling
+
+Foto's
+
+Klas / jaarlaag
+
+Eventueel: hobby's, favoriete vakken, quote
+
+Technische gegevens van bezoekers: IP-adres, browsertype (serverlogs)
+
+3. Waarvoor gebruiken wij deze gegevens?
+Het tonen van een overzicht van leerlingen binnen de school
+
+Educatieve doeleinden (het leren bouwen van een webapplicatie)
+
+Kennis maken binnen de klas/school
+
+Grondslag (AVG art. 6):
+
+Toestemming van de leerling (en bij minderjarigen: ouder/verzorger)
+
+Gerechtvaardigd belang voor de technische werking
+
+4. Hoe lang bewaren wij gegevens?
+Foto's en profielgegevens: tot het einde van het schooljaar [2026], daarna verwijderd
+
+Serverlogs: maximaal 30 dagen
+
+Bij intrekking toestemming: direct verwijderd
+
+5. Delen wij gegevens met derden?
+Wij delen geen gegevens met derden, behalve:
+
+Hostingpartij: [naam host]
+
+Indien wettelijk verplicht
+
+Foto's worden niet gedeeld buiten de schoolomgeving.
+
+6. Cookies
+Deze website gebruikt [wel/geen] cookies. [Zo ja: alleen functionele cookies voor inloggen/sessie.]
+
+7. Jouw rechten (AVG)
+Je hebt recht op:
+
+Inzage in jouw gegevens
+
+Correctie of verwijdering ("vergetelheid")
+
+Beperking van verwerking
+
+Bezwaar maken
+
+Toestemming intrekken (belangrijk bij foto's!)
+
+Neem contact op via [blabhblbah@gmail.com].
+
+8. Minderjarigen
+Ben je jonger dan 16 jaar? Dan hebben wij toestemming nodig van een ouder of verzorger voor het plaatsen van jouw foto en gegevens.
+
+9. Klachten
+Je kunt een klacht indienen bij de Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl).
+
+10. Beveiliging
+Wij nemen passende maatregelen: HTTPS, wachtwoordbeveiliging, beperkte toegang tot de database.
+
+11. Wijzigingen
+Deze verklaring kan worden aangepast. De datum bovenaan geeft de laatste versie aan.

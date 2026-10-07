@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="nl">
-
-<!--<<<The top of the page.>>>-->
 <head>
-    <link rel="stylesheet" href="Style.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <header>
-            <title data-nl="KKS-Pagina" data-en="KKS-Page">KKS-Pagina</title>
-                <h1 data-nl="Subpagina" data-en="Subpage">Subpagina</h1>
-                <button class="Button-set" id="language-button" type="button" onclick="changeLanguage()">English</button>
-                    <ul>
-                        <li><a data-nl="Terug" data-en="Back" href="/index.html">Terug</a></li>
-                        <li class="fontBar"><a href="/max/max.html">Max</a></li>
-                        <li class="fontBar"><a href="/alvin/prototype 23-9-2026.html">Alvin</a></li>
-                        <li class="fontBar"><a href="/ryan/index.html">Ryan</a></li>
-                        <li class="fontBar"><a href="/daan/index.html">Daan</a></li>
-                        <li class="TelEm" title="Klavs.Simplinskis@student.gildeopleidingen.nl"><a href="mailto:Klavs.Simplinskis@student.gildeopleidingen.nl">E-mail</a></li>
-                        <li class="TelEm" title="+37123479217"><a data-nl="Bellen" data-en="Call" href="tel:+37123479217">Bellen</a></li>
-                    </ul>
-        </header>
+    <title data-nl="KKS-Pagina" data-en="KKS-Page">KKS-Pagina</title>
+    <link rel="stylesheet" href="Style.css"/>
 </head>
 
-<!--<<<My information.>>>-->
 <body>
+    <header>
+        <h1 data-nl="Subpagina" data-en="Subpage">Subpagina</h1>
+        <button class="Button-set" id="language-button" type="button" onclick="changeLanguage()">English</button>
+        <ul>
+            <li><a data-nl="Terug" data-en="Back" href="/index.html">Terug</a></li>
+            <li class="fontBar"><a href="/max/max.html">Max</a></li>
+            <li class="fontBar"><a href="/alvin/prototype 23-9-2026.html">Alvin</a></li>
+            <li class="fontBar"><a href="/ryan/index.html">Ryan</a></li>
+            <li class="fontBar"><a href="/daan/index.html">Daan</a></li>
+            <li class="TelEm" title="Klavs.Simplinskis@student.gildeopleidingen.nl"><a href="mailto:Klavs.Simplinskis@student.gildeopleidingen.nl">E-mail</a></li>
+            <li class="TelEm" title="+37123479217"><a data-nl="Bellen" data-en="Call" href="tel:+37123479217">Bellen</a></li>
+        </ul>
+    </header>
+
     <img src="/klavs/Photo's/Me.jpg" alt="K.K.S_Photo" title="Klavs Kristians Simplinskis" class="image-set">
-        <h3>Klavs Kristians Simplinskis<br><span data-nl="Geboren:" data-en="Born:">Geboren:</span> 30/12/2008</h3>
-        <h4 data-nl="Kantoornummer: <i>6711</i>" data-en="Officenumber: <i>6711</i>">Kantoornummer: <i>6711</i></h4>
-            <p><b><ins>Pitch</ins></b></p>
-            <pre
-            data-nl="Mijn naam is Klavs (Kristians) Simplinskis en ik ben 17 jaar oud.
+
+    <h3>Klavs Kristians Simplinskis<br><span data-nl="Geboren:" data-en="Born:">Geboren:</span> 30/12/2008</h3>
+    <h4 data-nl="Kantoornummer: <i>6711</i>" data-en="Officenumber: <i>6711</i>">Kantoornummer: <i>6711</i></h4>
+
+    <p><b><ins>Pitch</ins></b></p>
+
+    <pre
+    data-nl="Mijn naam is Klavs (Kristians) Simplinskis en ik ben 17 jaar oud.
 Ik kom uit Letland en woon nu al zeven jaar in Nederland en ik ben een
 student van gildeopleidingen. Mijn hobbies zijn: Gamen, Gym en
 Badmintonen. Helaas speel ik niet veel badminton, omdat ik heb geen
@@ -57,27 +58,25 @@ en een game develpoer worden. Game developer zijn is simpelweg wat ik
 wil doen, maar het is meer een interesse dan iets anders. En muziek
 maken, dat lijkt mij gewoon leuk. Ik leef met mijn moeder en een kat,
 genaamd Bairon. Op dit moment hij is 8 jaar oud.</pre>
+
     <img src="/klavs/Photo's/Flag_of_Latvia.svg.webp" alt="Latvian_Flag" title="Letland" class="BonusImage1-set">
     <img src="/klavs/Photo's/Bairon_Eepy.jpg" alt="Bairon sleeping" title="Bairon" class="BonusImage2-set">
 
-<!--<<<The language changer for my webpage.>>>-->
-<script>
-    function changeLanguage() {
-        const page = document.documentElement;
-        const switchToEnglish = page.lang === "nl";
+    <footer>
+        <a href="/Privacyverklaring.txt">AVG</a>
+    </footer>
 
-        page.lang = switchToEnglish ? "en" : "nl";
-
-        document.querySelectorAll("[data-nl]").forEach(el => {
-            el.innerHTML = switchToEnglish ? el.dataset.en : el.dataset.nl;
-
-        });
-
-        document.getElementById("language-button").textContent =
-            switchToEnglish ? "Nederlands" : "English";
-    }
-</script>
-
+    <script>
+        function changeLanguage() {
+            const page = document.documentElement;
+            const switchToEnglish = page.lang === "nl";
+            page.lang = switchToEnglish ? "en" : "nl";
+            document.querySelectorAll("[data-nl]").forEach(el => {
+                el.innerHTML = switchToEnglish ? el.dataset.en : el.dataset.nl;
+            });
+            document.getElementById("language-button").textContent =
+                switchToEnglish ? "Nederlands" : "English";
+        }
+    </script>
 </body>
-
 </html>

@@ -2,24 +2,32 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daan D.</title>
     <link rel="stylesheet" href="Daan.css">
     <style>
-        .lang-btn {
-            padding: 8px 16px;
-            font-size: 16px;
-            cursor: pointer;
-            background: #eee;
-            border: 1px solid #999;
-            border-radius: 5px;
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .lang-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        background: #eee;
+        border: 1px solid #999;
+        border-radius: 5px;
+    }
+    @media (max-width: 500px) {
+        header {
+            flex-direction: column;
+            align-items: stretch;
         }
-        header ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            padding: 0;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
 
@@ -55,6 +63,10 @@ kantoor nummer 6711</pre>
 
 <h1 id="t9">Pitch</h1>
 <p id="t10">Ik ben Daan Dethmers, Een jongen van 17 jaar oud. Ik hou van muziek maken, scouting en gamen. Ik speel het liefste shooters die te maken hebben met geschiedenis of spellen van lage kwaliteit die heel grappig zijn met vrienden. Qua muziek luister ik vooral naar metal en rock en maak ik alleen hardrock. Mijn dromen zijn om een eigen bedrijf te hebben in de pre-built wereld en om mijn 2 droommotoren te hebben (Yamaha MT-09 en een Ducati Diavel).</p>
+
+<footer>
+    <a href="/Privacyverklaring.txt">AVG</a>
+</footer>
 
 <script>
     let dutch = true;

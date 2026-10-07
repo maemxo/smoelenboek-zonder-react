@@ -1,35 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alvin</title>
     <link rel="stylesheet" href="style.css">
-    <button id="language-button" class="button-base" onclick="changeLanguage()">English</button>
-</head> 
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            overflow-wrap: break-word;
+        }
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .pfp {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+            border-radius: 8px;
+        }
+        .text {
+            text-align: left;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem 0;
+            border-top: 1px solid #ccc;
+            text-align: center;
+        }
+        @media (max-width: 500px) {
+            body { padding: 0.75rem; }
+            h4 { font-size: 1rem; }
+            p[style*="x-large"] { font-size: 1.25rem !important; }
+        }
+    </style>
+</head>
 
 <body>
-    <p style="font-family: monospace; font-size: x-large;" class="bio" data-nl="<b>User Story 1: Smoelenboek</b>" data-en="<b>User Story 1: Smoelenboek</b>">
-        <b>User Story 1: Smoelenboek</b>
+    <div class="topbar">
+        <a href="../index.html"><button>Terug</button></a>
+        <button id="language-button" class="button-base" onclick="changeLanguage()">English</button>
+    </div>
+
+    <p style="font-family: monospace; font-size: 1.25rem;">
+        <b data-nl="User Story 1: Smoelenboek" data-en="User Story 1: Smoelenboek">User Story 1: Smoelenboek</b>
     </p>
 
-    <a href="../index.html"><button>Terug</button></a>
-
-    <h4 style="font-family: monospace; text-align: center;" class="bio" data-nl="Gilde / LJ2 / P1 / Alvin" data-en="Gilde / LJ2 / P1 / Alvin">
+    <h4 style="font-family: monospace; text-align: center;">
         Gilde / LJ2 / P1 / Alvin
     </h4>
 
-    <p style="font-family: 'Trebuchet MS', sans-serif; font-size: x-large; text-align: center;" class="bio" data-nl="<b>Ontmoet Alvin</b>" data-en="<b>Meet Alvin</b>">
-        <b>Ontmoet Alvin</b>
+    <p style="font-size: 1.5rem; text-align: center;">
+        <b data-nl="Ontmoet Alvin" data-en="Meet Alvin">Ontmoet Alvin</b>
     </p>
 
-    <p style="text-align: center; font-style: italic;" class="bio" data-nl="Doet al 2 jaar niveau 2 ICT in Gilde Opleidingen. Hij is een van de deelnemers die in dit project zit en doet SD (Software Development)." data-en="He has been studying ICT at Level 2 at Gilde Opleidingen for two years. He is one of the participants in this project and is specializing in SD (Software Development).">
+    <p style="text-align: center; font-style: italic;"
+       data-nl="Doet al 2 jaar niveau 2 ICT in Gilde Opleidingen. Hij is een van de deelnemers die in dit project zit en doet SD (Software Development)."
+       data-en="Has been doing level 2 ICT at Gilde Opleidingen for 2 years. He is one of the participants in this project and does SD (Software Development).">
         Doet al 2 jaar niveau 2 ICT in Gilde Opleidingen. Hij is een van de deelnemers die in dit project zit en doet SD (Software Development).
     </p>
 
-    <p class="text" class="bio" data-nl="<br><b>Biografie</b></br>" data-en="<br><b>Biography</b></br>">
-        <br><b>Biografie</b></br>
+    <p class="text">
+        <br><b data-nl="Biografie" data-en="Biography">Biografie</b>
     </p>
 
-    <p class="text" class="bio" data-nl="Naam: Alvin Mehinagic <br> Geboortedatum: 11 juli 2008 <br> Leeftijd: 18 <br> Intresses: Muziek luisteren, muziek maken, gamen, fitness <br><br> Kantoornummer: 6711 <br> Email: Alvin.Mehinagic@student.gildeopleidingen.nl <br> Telefoonnummer: +31 6 44650209" data-en="Name: Alvin Mehinagic <br> Date of birth: 11 July 2008 <br> Age: 18 <br> Interests: Listening to music, making music, gaming, fitness <br><br> Office number: 6711 <br> Email: Alvin.Mehinagic@student.gildeopleidingen.nl <br> Phone number: +31 6 44650209">
+    <p class="text"
+       data-nl="Naam: Alvin Mehinagic<br>Geboortedatum: 11 juli 2008<br>Leeftijd: 18<br>Intresses: Muziek luisteren, muziek maken, gamen, fitness<br><br>Kantoornummer: 6711<br>Email: <a href='mailto:Alvin.Mehinagic@student.gildeopleidingen.nl'>Alvin.Mehinagic@student.gildeopleidingen.nl</a><br>Telefoonnummer: <a href='tel:+31644650209'>+31 6 44650209</a>"
+       data-en="Name: Alvin Mehinagic<br>Date of birth: 11 July 2008<br>Age: 18<br>Interests: Listening to music, making music, gaming, fitness<br><br>Office number: 6711<br>Email: <a href='mailto:Alvin.Mehinagic@student.gildeopleidingen.nl'>Alvin.Mehinagic@student.gildeopleidingen.nl</a><br>Phone number: <a href='tel:+31644650209'>+31 6 44650209</a>">
         Naam: Alvin Mehinagic
         <br>
         Geboortedatum: 11 juli 2008
@@ -37,50 +85,42 @@
         Leeftijd: 18
         <br>
         Intresses: Muziek luisteren, muziek maken, gamen, fitness
-        <br>
-        <br>
+        <br><br>
         Kantoornummer: 6711
         <br>
-        Email: Alvin.Mehinagic@student.gildeopleidingen.nl
+        Email: <a href="mailto:Alvin.Mehinagic@student.gildeopleidingen.nl">Alvin.Mehinagic@student.gildeopleidingen.nl</a>
         <br>
-        Telefoonnummer: +31 6 44650209
+        Telefoonnummer: <a href="tel:+31644650209">+31 6 44650209</a>
     </p>
 
     <img class="pfp" src="IMG_3420.JPG" alt="alvin">
 
-    <p class="text" class="bio" data-nl="<br><b>Informatie over mijzelf</b></br>" data-en="<br><b>Information about me</b></br>">
-        <br><b>Informatie over mijzelf</b></br>
+    <p class="text">
+        <br><b data-nl="Informatie over mijzelf" data-en="Information about myself">Informatie over mijzelf</b>
     </p>
 
-    <p class="text" class="bio" data-nl="Ik ben geboren in Donderberg, Roermond. Ik woon samen met mijn ouders en mijn oudere broer. <br><br> Mijn interesse in ICT begon toen ik voor het eerst op de laptop van mijn broer terechtkwam. In het begin was ik vooral geïnteresseerd in computerspellen, maar toen ik ouder werd, raakte ik steeds nieuwsgieriger naar coderen en software. </br> </br> In mijn vrije tijd maak ik muziek, game ik af en toe en fitness ik ook. Ik luister ook naar muziek. Mijn favoriete artiest op dit moment is Twentythree." data-en="I was born in Donderberg, Roermond. I live with my parents and my older brother. <br><br> My interest in ICT began when I first started using my brother's laptop. At first, I was mainly interested in computer games, but as I got older, I became increasingly curious about coding and software. </br> </br> In my free time, I make music, play games occasionally, and work out. I also listen to music. My favorite artist at the moment is Twentythree.">
+    <p class="text"
+       data-nl="Ik ben geboren in Donderberg, Roermond. Ik woon samen met mijn ouders en mijn oudere broer.<br><br>Mijn interesse in ICT begon toen ik voor het eerst op de laptop van mijn broer terechtkwam. In het begin was ik vooral geïnteresseerd in computerspellen, maar toen ik ouder werd, raakte ik steeds nieuwsgieriger naar coderen en software.<br><br>In mijn vrije tijd maak ik muziek, game ik af en toe en fitness ik ook. Ik luister ook naar muziek. Mijn favoriete artiest op dit moment is Twentythree."
+       data-en="I was born in Donderberg, Roermond. I live with my parents and my older brother.<br><br>My interest in ICT started when I first got on my brother's laptop. At first I was mainly interested in computer games, but as I got older I became more and more curious about coding and software.<br><br>In my free time I make music, game occasionally and also work out. I also listen to music. My favorite artist right now is Twentythree.">
         Ik ben geboren in Donderberg, Roermond. Ik woon samen met mijn ouders en mijn oudere broer.
-        <br><br>Mijn interesse in ICT begon toen ik voor het eerst op de laptop van mijn broer terechtkwam. In het begin was ik vooral geïnteresseerd in computerspellen, maar toen ik ouder werd, raakte ik steeds nieuwsgieriger naar coderen en software.</br></br>
+        <br><br>Mijn interesse in ICT begon toen ik voor het eerst op de laptop van mijn broer terechtkwam. In het begin was ik vooral geïnteresseerd in computerspellen, maar toen ik ouder werd, raakte ik steeds nieuwsgieriger naar coderen en software.<br><br>
         In mijn vrije tijd maak ik muziek, game ik af en toe en fitness ik ook. Ik luister ook naar muziek. Mijn favoriete artiest op dit moment is Twentythree.
     </p>
 
-            <script>
-            // Heb de language switcher gepakt van Stack Overflow, ik zou het zelf niet kunnen.
-            function changeLanguage() {
-                const page = document.documentElement;
-                const english = page.lang === "nl";
-                page.lang = english ? "en" : "nl";
-                document.querySelectorAll("[data-nl]").forEach(function (text) {
-                    text.innerHTML = english ? text.dataset.en : text.dataset.nl;
-                });
-                document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
-            }
-        </script>
+    <footer>
+        <a href="/Privacyverklaring.txt">AVG</a>
+    </footer>
+
+    <script>
+        function changeLanguage() {
+            const page = document.documentElement;
+            const english = page.lang === "nl";
+            page.lang = english ? "en" : "nl";
+            document.querySelectorAll("[data-nl]").forEach(function (text) {
+                text.innerHTML = english ? text.dataset.en : text.dataset.nl;
+            });
+            document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
+        }
+    </script>
 </body>
-              <script>
-              // Heb de language switcher gepakt van Stack Overflow, ik zou het zelf niet kunnen.
-              function changeLanguage() {
-                 const page = document.documentElement;
-                 const english = page.lang === "nl";
-                 page.lang = english ? "en" : "nl";
-                 document.querySelectorAll("[data-nl]").forEach(function (text) {
-                    text.innerHTML = english ? text.dataset.en : text.dataset.nl;
-                 });
-                 document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
-              }
-           </script>
-    </body>
+</html>
