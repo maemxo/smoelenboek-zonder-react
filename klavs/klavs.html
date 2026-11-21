@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<!--*OPTIONAL: Make a English language in this html page.-->
 <html lang="nl">
-
-<!--<<<The top of the page.>>>-->
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-nl="KKS-Pagina" data-en="KKS-Page">KKS-Pagina</title>
     <link rel="stylesheet" href="Style.css"/>
-        <header>
-            <title>KKS-Pagina</title>
-                <h1>Subpagina</h1>
-                <!--*Add a language changer as a button here, if possible ofc.-->
-                <button type="button" onclick="" class="" disabled>Engels</button>
-                    <ul>
-                        <li><a href="/index.html">Terug</a></li>
-                        <li class="fontBar"><a href="/max/max.html">Max</a></li>
-                        <li class="fontBar"><a href="#Alvin">Alvin</a></li>
-                        <li class="fontBar"><a href="#Ryan">Ryan</a></li>
-                        <li class="fontBar"><a href="#Daan">Daan</a></li>
-                        <li class="TelEm" title="Klavs.Simplinskis@student.gildeopleidingen.nl"><a href="mailto:Klavs.Simplinskis@student.gildeopleidingen.nl">E-mail</a></li>
-                        <li class="TelEm" title="+37123479217"><a href="tel:+37123479217">Bellen</a></li>
-                    </ul>
-        </header>
 </head>
 
-<!--<<<My information.>>>-->
 <body>
+    <header>
+        <h1 data-nl="Subpagina" data-en="Subpage">Subpagina</h1>
+        <button class="Button-set" id="language-button" type="button" onclick="changeLanguage()">English</button>
+        <ul>
+            <li><a data-nl="Terug" data-en="Back" href="/index.html">Terug</a></li>
+            <li class="fontBar"><a href="/max/max.html">Max</a></li>
+            <li class="fontBar"><a href="/alvin/prototype 23-9-2026.html">Alvin</a></li>
+            <li class="fontBar"><a href="/ryan/index.html">Ryan</a></li>
+            <li class="fontBar"><a href="/daan/index.html">Daan</a></li>
+            <li class="TelEm" title="Klavs.Simplinskis@student.gildeopleidingen.nl"><a href="mailto:Klavs.Simplinskis@student.gildeopleidingen.nl">E-mail</a></li>
+            <li class="TelEm" title="+37123479217"><a data-nl="Bellen" data-en="Call" href="tel:+37123479217">Bellen</a></li>
+        </ul>
+    </header>
+
     <img src="/klavs/Photo's/Me.jpg" alt="K.K.S_Photo" title="Klavs Kristians Simplinskis" class="image-set">
-        <h3>Klavs Kristians Simplinskis<br>Geboren: 30/12/2008</h3>
-        <h4>Kantoornummer: <i>6711</i></h4>
-            <p><b><ins>Pitch</ins></b></p>
-            <pre>
+
+    <h3>Klavs Kristians Simplinskis<br><span data-nl="Geboren:" data-en="Born:">Geboren:</span> 30/12/2008</h3>
+    <h4 data-nl="Kantoornummer: <i>6711</i>" data-en="Officenumber: <i>6711</i>">Kantoornummer: <i>6711</i></h4>
+
+    <p><b><ins>Pitch</ins></b></p>
+
+    <pre
+    data-nl="Mijn naam is Klavs (Kristians) Simplinskis en ik ben 17 jaar oud.
+Ik kom uit Letland en woon nu al zeven jaar in Nederland en ik ben een
+student van gildeopleidingen. Mijn hobbies zijn: Gamen, Gym en
+Badmintonen. Helaas speel ik niet veel badminton, omdat ik heb geen
+tuin om waar te spelen. Mijn dromen zijn: Leren hoe ik muziek kan maken
+en een game develpoer worden. Game developer zijn is simpelweg wat ik
+wil doen, maar het is meer een interesse dan iets anders. En muziek
+maken, dat lijkt mij gewoon leuk. Ik leef met mijn moeder en een kat,
+genaamd Bairon. Op dit moment hij is 8 jaar oud."
+
+data-en="My name is Klavs (Kristians) Simplinskis and I am 17 years old.
+I am from Latvia and have been living in the Netherlands for seven years now
+and I'm a student at Gilde Opleidingen. My hobbies are gaming, working out,
+and playing badminton. Unfortunately, I don't play much badminton because
+I don't have a garden to play in. My dreams are to learn how to make music
+and to become a game developer. Being a game developer is simply what I
+want to do, though it is more of an interest than anything else. I also
+think making music would be fun. I live with my mother and a cat named
+Bairon. He is currently 8 years old.">
 Mijn naam is Klavs (Kristians) Simplinskis en ik ben 17 jaar oud.
 Ik kom uit Letland en woon nu al zeven jaar in Nederland en ik ben een
 student van gildeopleidingen. Mijn hobbies zijn: Gamen, Gym en
@@ -38,8 +58,25 @@ en een game develpoer worden. Game developer zijn is simpelweg wat ik
 wil doen, maar het is meer een interesse dan iets anders. En muziek
 maken, dat lijkt mij gewoon leuk. Ik leef met mijn moeder en een kat,
 genaamd Bairon. Op dit moment hij is 8 jaar oud.</pre>
-<img src="/klavs/Photo's/Flag_of_Latvia.svg.webp" alt="Latvian_Flag" title="Letland" class="BonusImage1-set">
-<img src="/klavs/Photo's/Bairon_Eepy.jpg" alt="Bairon sleeping" title="Bairon" class="BonusImage2-set">
-</body>
 
+    <img src="/klavs/Photo's/Flag_of_Latvia.svg.webp" alt="Latvian_Flag" title="Letland" class="BonusImage1-set">
+    <img src="/klavs/Photo's/Bairon_Eepy.jpg" alt="Bairon sleeping" title="Bairon" class="BonusImage2-set">
+
+    <footer>
+        <a href="/Privacyverklaring.txt">AVG</a>
+    </footer>
+
+    <script>
+        function changeLanguage() {
+            const page = document.documentElement;
+            const switchToEnglish = page.lang === "nl";
+            page.lang = switchToEnglish ? "en" : "nl";
+            document.querySelectorAll("[data-nl]").forEach(el => {
+                el.innerHTML = switchToEnglish ? el.dataset.en : el.dataset.nl;
+            });
+            document.getElementById("language-button").textContent =
+                switchToEnglish ? "Nederlands" : "English";
+        }
+    </script>
+</body>
 </html>

@@ -1,36 +1,106 @@
 <!DOCTYPE html>
-<html lang="nl"> 
-<header>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daan D.</title>
     <link rel="stylesheet" href="Daan.css">
-    <head>
-        <title>Daan D.</title>
-        <ul> 
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/max/max.html">Max</a></li>
-            <li><a href="">Alvin</a></li>
-            <li><a href="/ryan/index.html">Ryan</a></li>
-            <li><a href="/klavs/Index.html">Klavs</a></li>
-        </ul>
-    </head>
-</header> 
+    <style>
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .lang-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        background: #eee;
+        border: 1px solid #999;
+        border-radius: 5px;
+    }
+    @media (max-width: 500px) {
+        header {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+</style>
+</head>
 <body>
-   <img src="smoelenboek.jpg" alt="Daan Dethmers" >
-    
-    <h1>Daan's smoelenboek pagina</h1>
-    <p> mijn naam is Daan Dethmers </p>
-    <p>geboren; 08-12-2008(Helmond)  </p>
-    <pre>Hobbies:<br> Muziek<br>Scouting<br>Gamen
-        <p>huisdier(en)<br>Belle (Hond)</p>
-    </pre>
-    <pre>  zakelijke informatie<br>kantoor nummer 6711
-     </pre>
-            <A href="mailto:daan.dethmers@student.gildeopleidingen.nl">mail adres</A><br>
-            <a href="tel:+31646926911">Bellen?</a>
-            
-        <h1>Pitch</h1>
-        <p class="border">Ik ben Daan Dethmers, Een jongen van 17 jaar oud.Ik hou van muziek maken, scouting en gamen. ik speel het liefste shooters die temaken hebben met geschiedenis of spellen van lage kwaliteit die heel grappig zijn met vrienden.kwa muziek luister ik vooral naar metal en rock en maak ik alleen hardrock. mijn dromen zijn om een eigen bedrijf te hebben in de pre-built wereld en om mijn 2 droommotoren te hebben(Yamaha mt-09 en een ducati diavel.) </p>
-    
 
+<header>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/max/max.html">Max</a></li>
+        <li><a href="">Alvin</a></li>
+        <li><a href="/ryan/index.html">Ryan</a></li>
+        <li><a href="/klavs/Index.html">Klavs</a></li>
+    </ul>
+    <button class="lang-btn" onclick="switchLanguage()">🌐 <span id="langText">EN</span></button>
+</header>
+
+<img src="smoelenboek.jpg" alt="Daan Dethmers">
+
+<h1 id="t1">Daan's smoelenboek pagina</h1>
+<p id="t2">mijn naam is Daan Dethmers</p>
+<p id="t3">geboren; 08-12-2008 (Helmond)</p>
+
+<pre id="t4">Hobbies:
+Muziek
+Scouting
+Gamen</pre>
+
+<p id="t5">huisdier(en): Belle (Hond)</p>
+
+<pre id="t6">zakelijke informatie
+kantoor nummer 6711</pre>
+
+<a href="mailto:daan.dethmers@student.gildeopleidingen.nl" id="t7">mail adres</a><br>
+<a href="tel:+31646926911" id="t8">Bellen?</a>
+
+<h1 id="t9">Pitch</h1>
+<p id="t10">Ik ben Daan Dethmers, Een jongen van 17 jaar oud. Ik hou van muziek maken, scouting en gamen. Ik speel het liefste shooters die te maken hebben met geschiedenis of spellen van lage kwaliteit die heel grappig zijn met vrienden. Qua muziek luister ik vooral naar metal en rock en maak ik alleen hardrock. Mijn dromen zijn om een eigen bedrijf te hebben in de pre-built wereld en om mijn 2 droommotoren te hebben (Yamaha MT-09 en een Ducati Diavel).</p>
+
+<footer>
+    <a href="/Privacyverklaring.txt">AVG</a>
+</footer>
+
+<script>
+    let dutch = true;
+
+    function switchLanguage() {
+        if (dutch) {
+            document.getElementById("t1").innerHTML = "Daan's face book page";
+            document.getElementById("t2").innerHTML = "my name is Daan Dethmers";
+            document.getElementById("t3").innerHTML = "born; 08-12-2008 (Helmond)";
+            document.getElementById("t4").innerHTML = "Hobbies:\nMusic\nScouting\nGaming";
+            document.getElementById("t5").innerHTML = "pet(s): Belle (Dog)";
+            document.getElementById("t6").innerHTML = "business information\noffice number 6711";
+            document.getElementById("t7").innerHTML = "email address";
+            document.getElementById("t8").innerHTML = "Call?";
+            document.getElementById("t9").innerHTML = "Pitch";
+            document.getElementById("t10").innerHTML = "I am Daan Dethmers, a 17-year-old boy. I love making music, scouting and gaming. I prefer playing shooters that have to do with history or low-quality games that are very funny with friends. As for music, I mainly listen to metal and rock, and I only make hardrock. My dreams are to have my own business in the pre-built world and to have my 2 dream motorcycles (Yamaha MT-09 and a Ducati Diavel).";
+            document.getElementById("langText").innerHTML = "NL";
+            dutch = false;
+        } else {
+            document.getElementById("t1").innerHTML = "Daan's smoelenboek pagina";
+            document.getElementById("t2").innerHTML = "mijn naam is Daan Dethmers";
+            document.getElementById("t3").innerHTML = "geboren; 08-12-2008 (Helmond)";
+            document.getElementById("t4").innerHTML = "Hobbies:\nMuziek\nScouting\nGamen";
+            document.getElementById("t5").innerHTML = "huisdier(en): Belle (Hond)";
+            document.getElementById("t6").innerHTML = "zakelijke informatie\nkantoor nummer 6711";
+            document.getElementById("t7").innerHTML = "mail adres";
+            document.getElementById("t8").innerHTML = "Bellen?";
+            document.getElementById("t9").innerHTML = "Pitch";
+            document.getElementById("t10").innerHTML = "Ik ben Daan Dethmers, Een jongen van 17 jaar oud. Ik hou van muziek maken, scouting en gamen. Ik speel het liefste shooters die te maken hebben met geschiedenis of spellen van lage kwaliteit die heel grappig zijn met vrienden. Qua muziek luister ik vooral naar metal en rock en maak ik alleen hardrock. Mijn dromen zijn om een eigen bedrijf te hebben in de pre-built wereld en om mijn 2 droommotoren te hebben (Yamaha MT-09 en een Ducati Diavel).";
+            document.getElementById("langText").innerHTML = "EN";
+            dutch = true;
+        }
+    }
+</script>
 
 </body>
-</html> 
+</html>

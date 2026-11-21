@@ -13,10 +13,10 @@ body {
 
 .button-base {
     padding: 8px 12px;
-    border: 1px solid #999999;
+    border: 1px solid #99999900;
     border-radius: 3px;
-    background: white;
-    color: #222222;
+    background: #f5f5f5;
+    color: #222222; 
 }
 
 .back-button {
@@ -42,7 +42,6 @@ body {
 
 .profile-card {
     background: #f5f5f5;
-    border: 1px solid #d9d9d9;
     padding: 30px;
 }
 
@@ -51,6 +50,17 @@ body {
     align-items: center;
     gap: 24px;
     margin-bottom: 20px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: -1;
 }
 
 .profile-photo {
@@ -93,6 +103,18 @@ h2 {
     .top {
         flex-direction: column;
         text-align: center;
+    }
+
+    .back-button,
+    .eyebrow,
+    h1,
+    footer a {
+        background: #f5f5f5;
+    }
+
+    .eyebrow,
+    h1 {
+        display: inline-block;
     }
 
     .info {

@@ -1,4 +1,26 @@
 html {
-    height: 100%;
+    min-height: 100%;
     background: linear-gradient(to top, #37aeea, #da1fe0);
+}
+
+.page-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.back-button,
+#language-button {
+    padding: 8px 12px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background: #ffffff;
+    color: #222222;
+    font: inherit;
+    text-decoration: none;
+}
+
+#language-button {
+    cursor: pointer;
 }
