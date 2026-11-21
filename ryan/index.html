@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -74,4 +75,82 @@
         }
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoelenboek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="page-controls" aria-label="Page controls">
+        <a class="back-button" href="../index.html" data-nl="Terug" data-en="Back">Terug</a>
+        <button id="language-button" type="button" onclick="changeLanguage()">English</button>
+    </nav>
+
+    <img src="/ryan/Snapchat-1849706899.jpg" alt="Ryan" width="200" height="200">
+    <hr>
+
+    <br>
+    <br>
+
+    <h1 data-nl="Ryan's smoelenboek pagina" data-en="Ryan's profile page">Ryan's smoelenboek pagina</h1>
+
+    <h2 data-nl="Kantoornummer #6711" data-en="Office number #6711">Kantoornummer #6711</h2>
+
+    <p data-nl="Dit is mijn pagina van het smoelenboek" data-en="This is my profile page.">
+        Dit is mijn pagina van het smoelenboek
+    </p>
+
+    <p data-nl="Mijn naam is Ryan Xhofleer" data-en="My name is Ryan Xhofleer">
+        Mijn naam is Ryan Xhofleer
+    </p>
+
+    <p data-nl="Ik ben geboren op 23-06-2008" data-en="I was born on 23-06-2008">
+        ik ben geboren op 23-06-2008
+    </p>
+    <p>Mijn telefoon nummer is <a href="tel:+31639863211">+31 639863211</a></p>
+    <p data-nl="En mijn hobby's zijn gamen en muziek luisteren" data-en="My hobbies are gaming and listening to music">
+        En mijn hobby's zijn gamen en muziek luisteren
+    </p>
+    <br>
+    <p>Pitch</p>
+
+    <p data-nl="Mijn naam is Ryan [Leonardus jacobus] Xhofleer en ik ben 18 jaar en leef met mijn vader moeder en broertje niek mijn favorite ding om te doen is gamen of series kijken met vrienden en muziek luisteren onder het gamen of als ik klaar ben met gamen ik hou ook wel eens van een wandeling en dan luister ik ook muziek"
+       data-en="My name is Ryan [Leonardus jacobus] Xhofleer and I am 18 years old. I live with my father, mother, and younger brother Niek. My favorite things to do are gaming or watching series with friends, and listening to music while gaming or after I finish. I also enjoy going for a walk and listening to music.">Mijn naam is Ryan [Leonardus jacobus] Xhofleer en ik ben 18 jaar en leef met mijn vader moeder en broertje niek mijn favorite ding om te doen is gamen of series kijken met vrienden en muziek luisteren onder het gamen of als ik klaar ben met gamen ik hou ook wel eens van een wandeling en dan luister ik ook muziek</p>
+    <p>Mijn email <a href="mailto:ryan.xhofleer@student.gildeopleidingen.nl">ryan.xhofleer@student.gildeopleidingen.nl</a></p>
+
+    <footer>
+        <a href="/Privacyverklaring.txt">AVG</a>
+    </footer>
+
+    <script>
+        function changeLanguage() {
+            const page = document.documentElement;
+            const english = page.lang === "nl";
+            page.lang = english ? "en" : "nl";
+
+            document.querySelectorAll("[data-nl]").forEach(function (text) {
+                text.textContent = english ? text.dataset.en : text.dataset.nl;
+            });
+
+            document.getElementById("language-button").textContent = english ? "Nederlands" : "English";
+        }
+    </script>
+</body>
+>>>>>>> c59fb0a99d6da2c343df1761103156ff040713e0
 </html>
